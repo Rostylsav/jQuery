@@ -28,22 +28,17 @@
         var button =  $('<button>').attr({
             'id' : 'showValue'
         });
-        button.on('click', show);
+        button.on('click', showValue);
         button.text('show value');
 
 
         div.append(input);
         div.append(button);
-        div.show();
-
         parenDiv.append(div);
-
-        $('#wrapper').append(parenDiv)
-
-
+        $('#wrapper').append(parenDiv);
     }
 
-    function show(){
+    function showValue(){
         var div = $('<div>');
         div.text($('#input').val());
         $('#parentForm').remove();

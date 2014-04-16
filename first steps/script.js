@@ -42,7 +42,7 @@
         });
 
         var checkbox = $('<input>').attr({
-            'id': 'checkbox' + obj.id,
+            'data-id': 'checkbox' + obj.id,
             'class': 'checkbox',
             'type' : 'checkbox',
             'checked' : obj.status
@@ -78,9 +78,10 @@
             showTask(array[i]);
         }
     }
+
+
     $(function(){
        createInput();
-
        showAll(collection);
     });
 })(jQuery); 
